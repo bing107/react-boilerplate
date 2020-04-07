@@ -6,7 +6,7 @@
 
 - Build Project: `npm run build`
 
-- Run dev server: `npm run devs`
+- Run dev server: `npm run dev`
 
 ## Image Compression
 
