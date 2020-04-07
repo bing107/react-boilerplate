@@ -1,16 +1,22 @@
 import './styles.css';
+import logo from './assets/logo.svg';
+import pic1 from './assets/pic1.webp';
+import pic2 from './assets/pic2.webp';
 
+let showAPic = true;
 let imageLoaderEl = document.getElementById('image-loader');
-let picNumber = 1;
+let logoEl = document.getElementById('logo');
 
-imageLoaderEl.style.backgroundImage = `url('/assets/pic1.webp')`;
+logoEl.setAttribute('src', logo);
+
+imageLoaderEl.style.backgroundImage = `url(${pic1})`;
 
 setInterval(() => {
-  if (picNumber === 2) {
-    picNumber = 1;
-    imageLoaderEl.style.backgroundImage = `url('/assets/pic${picNumber}.webp')`;
+  if (showAPic) {
+    imageLoaderEl.style.backgroundImage = `url(${pic2})`;
+    showAPic = false;
   } else {
-    picNumber = 2;
-    imageLoaderEl.style.backgroundImage = `url('/assets/pic${picNumber}.webp')`;
+    showAPic = true;
+    imageLoaderEl.style.backgroundImage = `url(${pic1})`;
   }
 }, 8000);
