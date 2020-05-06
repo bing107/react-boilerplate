@@ -7,6 +7,7 @@ const bundleAnalyzerPlugin = require('webpack-bundle-analyzer')
 
 module.exports = {
   entry: './src/index.tsx',
+  mode: 'production',
   output: {
     filename: 'main.[hash].js',
     path: path.resolve(__dirname, 'dist'),
@@ -63,6 +64,7 @@ module.exports = {
     }),
     require('tailwindcss'),
     new miniCss({ filename: '[name].css', publicPath: './dist' }),
-    new bundleAnalyzerPlugin({ openAnalyzer: false }),
-  ],
+    process.env.NODE_ENV === 'development' &&
+      new bundleAnalyzerPlugin({ openAnalyzer: false }),
+  ].filter((n) => n),
 };

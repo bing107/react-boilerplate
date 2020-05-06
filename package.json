@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "yarn tailwind:css && webpack-dev-server --mode development",
-    "build": "webpack --mode production",
+    "build": "NODE_ENV=production webpack",
     "tailwind:css": "tailwind build src/styles.css -c  tailwind.config.js -o src/tailwind.css",
     "test": "jest",
     "test:watch": "jest --watch",
