@@ -1,10 +1,26 @@
 # [Project Name]
 
+## Contents:
+
+- webpack
+- react
+- tailwind
+- typescript
+- @testing-library/react
+- cypress
+- storybook
+- greenkeeper
+- travis
+- code coverage
+- bundle analyzer
+
 ## [Instructions]:
 
-- Install dependencies: `npm i`
+- Make sure you have node installed. If you have `nvm` installed, go ahead and `nvm use`
 
-- Build Project: `npm run build`
+- Install dependencies: `yarn`
+
+- Build Project: `yarn build`
 
 - Run dev server: `npm run dev`
 

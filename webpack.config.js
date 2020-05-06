@@ -5,7 +5,7 @@ const htmlWebpackPlugin = require('html-webpack-plugin');
 const bundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.tsx',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
@@ -23,10 +23,6 @@ module.exports = {
         ],
       },
       {
-        test: /\.pug$/,
-        use: ['pug-loader'],
-      },
-      {
         test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
         use: {
@@ -36,6 +32,7 @@ module.exports = {
           },
         },
       },
+      { test: /\.tsx?$/, use: 'ts-loader', exclude: /node_modules/ },
       {
         test: /\.(png|jpeg|jpg|svg|webp)$/,
         exclude: /node_modules/,
@@ -49,7 +46,7 @@ module.exports = {
     ],
   },
   resolve: {
-    extensions: ['.js', '.ts', '.scss', '.css', '.pug'],
+    extensions: ['.js', '.ts', '.tsx', '.scss', '.css'],
   },
   devServer: {
     contentBase: path.join(__dirname, 'dist/'),
@@ -59,10 +56,10 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new htmlWebpackPlugin({
-      template: './src/index.pug',
+      template: './src/index.html',
     }),
     require('tailwindcss'),
     new miniCss({ filename: '[name].css', publicPath: './dist' }),
-    new bundleAnalyzerPlugin(),
+    new bundleAnalyzerPlugin({ openAnalyzer: false }),
   ],
 };
