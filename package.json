@@ -12,6 +12,8 @@
     "tailwind:css": "tailwind build src/styles.css -c  tailwind.config.js -o src/tailwind.css",
     "test": "jest",
     "test:watch": "jest --watch",
+    "cypress": "cypress run",
+    "cypress:open": "cypress open",
     "bundle:view": "webpack --profile --json > stats.json && webpack-bundle-analyzer bundle/output/path/stats.json"
   },
   "dependencies": {
@@ -34,6 +36,7 @@
     "babel-jest": "^26.0.1",
     "babel-loader": "^8.0.6",
     "css-loader": "^3.4.2",
+    "cypress": "^4.5.0",
     "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.0.3",
     "jest": "^26.0.1",

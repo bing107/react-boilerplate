@@ -1,6 +1,6 @@
 # [Project Name]
 
-## Contents:
+## Content:
 
 - [x] webpack
 - [x] react
@@ -15,7 +15,7 @@
 - [x] bundle analyzer
 - [x] prettier
 
-## [Instructions]:
+## Instructions:
 
 - Make sure you have node installed. If you have `nvm` installed, go ahead and `nvm use`
 
