@@ -1,6 +1,6 @@
-# developer-test-pug-react
+# [Proj Name]
 
-## Running the task:
+## [Instructions]:
 
 - Install dependencies: `npm i`
 
