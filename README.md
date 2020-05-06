@@ -7,9 +7,9 @@
 - [x] tailwind
 - [x] typescript
 - [x] @testing-library/react
-- [ ] cypress
+- [x] cypress
 - [ ] storybook
-- [ ] greenkeeper
+- [x] renovate
 - [ ] travis
 - [x] code coverage
 - [x] bundle analyzer
