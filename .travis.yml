@@ -12,7 +12,6 @@ jobs:
       script:
         - yarn
         - yarn test
-        - yarn cypress
     # I'll add the netlify deployment later
     - stage: deploy
       script:
