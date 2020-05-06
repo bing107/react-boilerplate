@@ -1,4 +1,4 @@
-# [Proj Name]
+# [Project Name]
 
 ## [Instructions]:
 
