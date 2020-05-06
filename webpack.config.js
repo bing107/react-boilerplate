@@ -2,12 +2,13 @@ const path = require('path');
 const webpack = require('webpack');
 const miniCss = require('mini-css-extract-plugin');
 const htmlWebpackPlugin = require('html-webpack-plugin');
-const bundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const bundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+  .BundleAnalyzerPlugin;
 
 module.exports = {
   entry: './src/index.tsx',
   output: {
-    filename: 'main.js',
+    filename: 'main.[hash].js',
     path: path.resolve(__dirname, 'dist'),
   },
   devtool: 'source-map',
@@ -17,7 +18,9 @@ module.exports = {
         test: /\.css$/,
         exclude: /node_modules/,
         use: [
-          process.env.NODE_ENV !== 'production' ? 'style-loader' : miniCss.loader,
+          process.env.NODE_ENV !== 'production'
+            ? 'style-loader'
+            : miniCss.loader,
           'css-loader',
           'postcss-loader',
         ],

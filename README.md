@@ -2,17 +2,18 @@
 
 ## Contents:
 
-- webpack
-- react
-- tailwind
-- typescript
-- @testing-library/react
-- cypress
-- storybook
-- greenkeeper
-- travis
-- code coverage
-- bundle analyzer
+- [x] webpack
+- [x] react
+- [x] tailwind
+- [x] typescript
+- [x] @testing-library/react
+- [ ] cypress
+- [ ] storybook
+- [ ] greenkeeper
+- [ ] travis
+- [x] code coverage
+- [x] bundle analyzer
+- [x] prettier
 
 ## [Instructions]:
 
