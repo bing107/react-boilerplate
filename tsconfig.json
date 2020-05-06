@@ -3,7 +3,6 @@
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./src",
-    "declaration": true,
     "esModuleInterop": true,
     "jsx": "react",
     "module": "esnext",

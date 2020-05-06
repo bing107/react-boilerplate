@@ -1,0 +1,18 @@
+language: node_js
+
+stages:
+  - name: test
+    if: type = pull_request
+  - name: deploy
+    if: branch = master AND (NOT type = pull_request)
+
+jobs:
+  include:
+    - stage: test
+      script:
+        - yarn
+        - yarn test
+    # I'll add the netlify deployment later
+    - stage: deploy
+      script:
+        - yarn
