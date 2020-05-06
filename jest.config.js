@@ -12,7 +12,7 @@ module.exports = {
   coverageDirectory: 'coverage',
 
   // An array of regexp pattern strings used to skip coverage collection
-  coveragePathIgnorePatterns: ['/node_modules/'],
+  coveragePathIgnorePatterns: ['/node_modules/', '/cypress/'],
 
   // A list of reporter names that Jest uses when writing coverage reports
   coverageReporters: ['json', 'text', 'lcov', 'clover'],
@@ -46,7 +46,7 @@ module.exports = {
   testMatch: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[tj]s?(x)'],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
-  testPathIgnorePatterns: ['/node_modules/', '/dist/'],
+  testPathIgnorePatterns: ['/node_modules/', '/dist/', 'cypress'],
 
   // A map from regular expressions to paths to transformers
   transform: { '^.+\\.[jt]sx?$': 'babel-jest' },
