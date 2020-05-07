@@ -5,6 +5,6 @@ import App from './App';
 describe('app container', () => {
   it('should render the app correctly', () => {
     const { container } = render(<App />);
-    expect(container).toHaveTextContent('Hey boy!');
+    expect(container).toHaveTextContent('yada yada');
   });
 });
