@@ -4,14 +4,14 @@
 
 - [x] webpack
 - [x] react
-- [ ] deploy on netlify
+- [x] deploy on netlify
 - [x] tailwind
 - [x] typescript
 - [x] @testing-library/react
 - [x] cypress
 - [x] storybook
 - [x] renovate
-- [ ] travis
+- [x] travis
 - [x] code coverage
 - [x] bundle analyzer
 - [x] prettier
