@@ -28,10 +28,10 @@
     "tailwindcss": "^1.2.0"
   },
   "devDependencies": {
-    "@babel/core": "7.10.3",
-    "@babel/preset-env": "7.10.3",
-    "@babel/preset-react": "7.10.1",
-    "@babel/preset-typescript": "7.10.1",
+    "@babel/core": "7.10.4",
+    "@babel/preset-env": "7.10.4",
+    "@babel/preset-react": "7.10.4",
+    "@babel/preset-typescript": "7.10.4",
     "@storybook/addon-actions": "5.3.19",
     "@storybook/addon-links": "5.3.19",
     "@storybook/addons": "5.3.19",
