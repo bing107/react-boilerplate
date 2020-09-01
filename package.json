@@ -42,7 +42,7 @@
     "babel-jest": "26.3.0",
     "babel-loader": "8.1.0",
     "css-loader": "4.2.2",
-    "cypress": "5.0.0",
+    "cypress": "5.1.0",
     "file-loader": "6.1.0",
     "html-webpack-plugin": "4.4.1",
     "jest": "26.4.2",
