@@ -41,7 +41,7 @@
     "autoprefixer": "9.8.6",
     "babel-jest": "26.3.0",
     "babel-loader": "8.1.0",
-    "css-loader": "4.2.2",
+    "css-loader": "4.3.0",
     "cypress": "5.1.0",
     "file-loader": "6.1.0",
     "html-webpack-plugin": "4.4.1",
