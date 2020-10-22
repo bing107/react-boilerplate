@@ -51,7 +51,7 @@
     "postcss-cli": "8.1.0",
     "postcss-loader": "4.0.4",
     "prettier": "2.1.2",
-    "sass-loader": "10.0.3",
+    "sass-loader": "10.0.4",
     "style-loader": "2.0.0",
     "ts-loader": "8.0.6",
     "typescript": "4.0.3",
