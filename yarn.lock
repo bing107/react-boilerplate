@@ -12553,16 +12553,12 @@ sass-graph@^4.0.1:
     scss-tokenizer "^0.4.3"
     yargs "^17.2.1"
 
-sass-loader@10.4.1:
-  version "10.4.1"
-  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-10.4.1.tgz#bea4e173ddf512c9d7f53e9ec686186146807cbf"
-  integrity sha512-aX/iJZTTpNUNx/OSYzo2KsjIUQHqvWsAhhUijFjAPdZTEhstjZI9zTNvkTTwsx+uNUJqUwOw5gacxQMx4hJxGQ==
+sass-loader@13.3.3:
+  version "13.3.3"
+  resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-13.3.3.tgz#60df5e858788cffb1a3215e5b92e9cba61e7e133"
+  integrity sha512-mt5YN2F1MOZr3d/wBRcZxeFgwgkH44wVc2zohO2YF6JiOMkiXe4BYRZpSu2sO1g71mo/j16txzUhsKZlqjVGzA==
   dependencies:
-    klona "^2.0.4"
-    loader-utils "^2.0.0"
     neo-async "^2.6.2"
-    schema-utils "^3.0.0"
-    semver "^7.3.2"
 
 saxes@^5.0.0:
   version "5.0.1"
